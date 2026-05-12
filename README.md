@@ -1,16 +1,57 @@
-# React + Vite
+# Task Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um aplicativo de tarefas simples criado com React e Vite.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Adicionar novas tarefas
+- Marcar tarefas como completas
+- Marcar tarefas como favoritas
+- Deletar tarefas
+- Filtrar tarefas por rota:
+  - `/` — todas as tarefas
+  - `/completas` — apenas tarefas completas
+  - `/favoritas` — apenas tarefas favoritas
+- Persistência no `localStorage`
 
-## React Compiler
+## Como usar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+2. Inicie o ambiente de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+3. Abra o navegador em `http://localhost:5173`
 
-## Expanding the ESLint configuration
+## Build
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build
+```
+
+## Deploy para GitHub Pages
+
+```bash
+npm run deploy
+```
+
+O projeto foi preparado para deploy em GitHub Pages com base no repositório:
+
+`https://github.com/douradosD/task.tarefas-/`
+
+## Tecnologias usadas
+
+- React
+- Vite
+- React Router
+- Material UI Icons
+
+## Estrutura principal
+
+- `src/Componentes/TarefaForm.jsx` — formulário de criação de tarefas
+- `src/Componentes/TarefasList.jsx` — lista de tarefas com filtro
+- `src/Componentes/Sidebar.jsx` — navegação por rota
+- `src/servicos/tarefas.servico.js` — funções de persistência e atualização
