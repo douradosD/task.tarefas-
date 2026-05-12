@@ -1,0 +1,134 @@
+@import './var.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--cor-principal);
+}
+
+header {
+  background-color: var(--cor-principal);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container-do-conteudo {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.btn-principal {
+  border: none;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  white-space: nowrap;
+  padding: 15px;
+  gap: 5px;
+}
+
+.btn-principal:hover {
+  background-color: var(--cor-terciaria);
+}
+
+.conteudo-principal {
+  width: 100vw;
+}
+.tarefas {
+  background-color: var(--cor-secundaria);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.tarefas-form {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-adicionar {
+  background-color: var(--cor-principal);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-adicionar:hover {
+  scale: calc(1.1);
+}
+
+input {
+  border-radius: 5px;
+  background-color: var(--cor-quaternaria);
+  border: 2px solid var(--cor-principal);
+}
+
+.tarefas-lista {
+  background-color: var(--cor-principal);
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  max-height: 80%;
+  overflow-y: scroll;
+} 
+
+.tarefa-unica {
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.tarefa-unica:hover {
+  background-color: var(--cor-terciaria);
+}
+
+.acoes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.texto-tarefa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-btn {
+  width: 100%;
+  text-decoration: none;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
